@@ -13,5 +13,10 @@ module.exports = {
         // HTMLに対応するブラウザリロード。（JSはもともと自動）
         watchContentBase: true,
         port: 8081,
+    },
+    output: {
+        // libraryTarget: 'umd'をoutput以下に追加することで、ライブラリモードが有効になり、バンドル main.js にあるexportされたクラスや関数にアクセスできるようになる。
+        libraryTarget: 'umd'
+        
     }
 };
