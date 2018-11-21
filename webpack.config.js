@@ -19,6 +19,7 @@ module.exports = {
     // エントリーポイント。複数のJSをインポートするファイルになる。
     entry: {app: './src/index.js'},
     output: {
+        path: path.join(__dirname, 'dist'),
         // ブラウザからアクセスする際のパス
         publicPath: '/js/',
         // nameには上のエントリーで設定したappが入る。
@@ -28,7 +29,6 @@ module.exports = {
         // libraryTarget: 'umd'をoutput以下に追加することで、ライブラリモードが有効になり、バンドル main.js にあるexportされたクラスや関数にアクセスできるようになる。
         // そしてumdはライブラリ化するときの方法
         libraryTarget: 'umd'
-        
     },
     module: {
         rules: [
