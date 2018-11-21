@@ -5,7 +5,7 @@ export default class Hello {
 	}
 
 	/**
-	 * 
+	 *
 	 * @returns {string}
 	 */
 
